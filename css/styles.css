@@ -122,8 +122,10 @@ body {
   color: var(--title-text-color);
 }
 /* Секция Наша команда */
-.team li {
+.team {
   background-color: var(--team-bg-color);
+}
+.team li {
   list-style-type: none;
 }
 .team-title {
