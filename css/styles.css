@@ -38,6 +38,23 @@ body {
 /* Щапка сайта */
 .top {
   border-bottom: 1px solid #ececec;
+  display: flex;
+  align-items: center;
+}
+.nav {
+  margin-left: 93px;
+}
+.nav > .list {
+  display: flex;
+}
+/* Задаем элементам отступы (кроме последнего ребенка) */
+.nav-item:not(:last-child) {
+  margin-right: 50px;
+}
+.nav-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 /* Логотип */
 .logo {
@@ -75,6 +92,13 @@ body {
 .list li {
   list-style-type: none;
 }
+.contacts {
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  padding: 0;
+}
 .contacts a {
   text-decoration: none;
   font-weight: 500;
@@ -86,29 +110,37 @@ body {
 .contacts a:focus {
   color: var(--logo-color);
 }
-.contacts {
-  margin: 0;
-  padding: 0;
+/* Убираем отступы крайнего элемена 2-й способ  ЛУЧШИЙ!!!*/
+.cont-item + .cont-item {
+  margin-left: 50px;
 }
-.contacts li {
+.cont-item {
   list-style-type: none;
+}
+.cont-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 /* Секция герой */
 .hero {
   background: var(--hero-color);
   width: 1600px;
+  height: 600px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
 }
 .hero h1 {
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 0;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  padding-top: 200px;
+  padding-bottom: 30px;
   color: var(--white-next-color);
 }
 /* Кнопка герой */
@@ -134,9 +166,15 @@ body {
 .dignity > h2 {
   display: none;
 }
-.dignity ul {
+.dignity-list {
+  display: flex;
   margin: 0;
   padding: 0;
+  margin-left: -30px;
+}
+.dignity-item {
+  margin-left: 30px;
+  margin-bottom: 0;
 }
 .dignity li {
   list-style-type: none;
@@ -155,9 +193,15 @@ body {
   padding: 0;
 }
 /* Секция Чем мы занимаемся */
-.about-work ul {
+.abou-w-list {
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+}
+.a-w-item {
+  margin-left: 30px;
 }
 .about-work li {
   list-style-type: none;
@@ -171,12 +215,20 @@ body {
   margin: 0 0 50px 0;
 }
 /* Секция Наша команда */
-.team ul {
+.team {
+  background-color: var(--team-bg-color);
+}
+.team-list {
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
 }
-.team li {
+.team-item {
   list-style-type: none;
+  margin-left: 30px;
+  margin-bottom: 0;
 }
 .team-title {
   font-weight: 500;
@@ -186,22 +238,13 @@ body {
   margin-top: 30px;
 }
 .team-text {
-  display: inline-block;
   font-size: 16px;
   line-height: 1.18;
   margin-top: 0;
-  margin-bottom: 30px;
-  padding: 0;
-}
-.team-text-last {
-  /* kostili!!!!!!!!!!!!!!!! */
-  font-size: 16px;
-  line-height: 1.18;
-  padding: 0;
   margin-bottom: 0;
-  margin-top: 0;
-  /* kostili!!!!!!!!!!!!!!!! */
+  padding: 0;
 }
+
 /* Подвал */
 .ftr {
   background-color: var(--hero-color);
