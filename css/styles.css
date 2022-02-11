@@ -23,7 +23,6 @@ body {
   font-size: 14px;
   letter-spacing: 0.03em;
   color: var(--context-color);
-  margin: 0;
 }
 .conteiner {
   width: 1200px;
@@ -36,8 +35,9 @@ body {
   padding-bottom: 94px;
   padding-top: 94px;
 }
-h1 h2 h3 p {
-  margin: 0 auto;
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
 }
 ul {
   padding: 0;
@@ -56,7 +56,12 @@ img {
   align-items: center;
 }
 .nav {
-  margin-left: 93px;
+  display: flex;
+  align-items: center;
+}
+.header-wrap {
+  display: flex;
+  align-items: center;
 }
 .nav > .list {
   display: flex;
@@ -79,13 +84,10 @@ img {
   font-size: 26px;
   line-height: 1.19;
   color: var(--label-color);
+  margin-right: 93px;
 }
 .logo > span {
   color: var(--logo-color);
-}
-.list {
-  margin: 0;
-  padding: 0;
 }
 .list a {
   list-style: none;
@@ -140,7 +142,7 @@ img {
 .hero {
   background: var(--hero-color);
   /* height: 600px; */
-  padding-top: 0;
+  padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
   margin-left: auto;
@@ -149,15 +151,12 @@ img {
 .hero h1 {
   width: 696px;
   margin: 0 auto;
-  margin-top: 0;
-  margin-bottom: 0;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  padding-top: 200px;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
   color: var(--white-next-color);
 }
 /* Кнопка герой */
@@ -168,6 +167,7 @@ img {
   left: 685px;
   top: 430px;
   background: var(--logo-color);
+  border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   font-weight: 700;
@@ -205,12 +205,9 @@ margin-right: 30px;
   text-transform: uppercase;
   color: var(--title-text-color);
   margin-bottom: 10px;
-  margin-top: 0;
 }
 .dignity-text {
   line-height: 1.71;
-  margin: 0;
-  padding: 0;
 }
 /* Секция Чем мы занимаемся */
 .abou-w-list { 
@@ -226,7 +223,6 @@ margin-right: 30px;
   line-height: 1.16;
   text-align: center;
   color: var(--title-text-color);
-  margin-top: 0;
   margin-bottom: 50px;
 }
 /* Секция Наша команда */
@@ -236,17 +232,14 @@ margin-right: 30px;
 }
 
 .team-list {
-  /* margin: 0;
-  padding: 0; */
   display: flex;
-  /* flex-wrap: wrap; */
-  /* margin-left: -30px; */
 }
 .team-item {
   list-style-type: none;
   width: 270px;
-  /* margin-left: 30px; */
-  margin-bottom: 0;
+  border: 1px solid #eeeeee;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .team-item + .team-item {
   margin-left: 30px;
@@ -258,28 +251,21 @@ margin-right: 30px;
   color: var(--title-text-color);
   margin-top: 0;
   margin-bottom: 0;
-  padding-top: 30px;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 .team-text {
   font-size: 16px;
   line-height: 1.18;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-bottom: 30px;
 }
 .our-team {
-  border-bottom: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
-  border-radius: 0px 0px 4px 4px;
   text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 /* Подвал */
 .ftr {
   background-color: var(--hero-color);
-  /* height: 252px; */
   margin-left: auto;
   margin-right: auto;
   padding-top: 60px;
@@ -315,24 +301,15 @@ margin-right: 30px;
   font-style: normal;
   line-height: 1.71;
   color: var(--white-next-color);
+  display: block;
   /* margin-bottom: 9px; */
 }
 .ftr-contacts {
   color: var(--ftr-contacts-color);
 }
-.ftr-sc {
-  margin-top: 9px;
+.ftr-item:not(:last-child) {
   margin-bottom: 9px;
 }
-/* .ftr-street {
-  margin-top: 0;
-  margin-bottom: 90px; */
-}
-/* .ftr-contacts {
-  margin-top: 0;
-  margin-bottom: 90px;
-} */
-
 
 /* Portfolio html */
 .port-our-work {
@@ -346,10 +323,7 @@ margin-right: 30px;
   list-style: none;
   display: flex;
   justify-content: center;
-  /* padding-top: 102px; */
-  padding-left: 0;
-  padding-right: 0;
-  margin: 0;
+  padding-top: 102px;
 }
 .port-btn-list > .item:not(:last-child) {
   margin-right: 8.12px;
@@ -386,8 +360,6 @@ margin-right: 30px;
 .port-list {
   list-style: none;
   margin-top: 50px;
-  margin-bottom: 0;
-  padding-left: 0;
   display: flex;
   flex-wrap: wrap;
 }
@@ -403,6 +375,8 @@ margin-right: 30px;
   border-right: 1px solid #eeeeee;
   padding-top: 20px;
   padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 /* Даем каждому третьему элементу в списке нулевой правый и верхний маржин!!! */
   .port-item:nth-child(3n) {
@@ -420,22 +394,16 @@ margin-right: 30px;
 .port-list a {
   text-decoration: none;
 }
-.port-list-img {
-  margin-bottom: 0px;
-}
 .port-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-text-color);
-  margin-top: 0;
   margin-bottom: 3.98px;
 }
 .port-text {
   font-size: 16px;
   line-height: 1.87;
   color: var(--context-color);
-  margin-top: 0;
-  margin-bottom: 0;
 }
