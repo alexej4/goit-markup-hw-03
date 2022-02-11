@@ -13,7 +13,7 @@
 </head>
 <body>
 <!--Шапка сайта-->
-    <header class="top conteiner">
+    <header class="conteiner top">
         <a href="./index.html" lang="en" class="logo"><span>Web</span>Studio</a>
         <nav class="nav">
             <ul class="list">
@@ -29,14 +29,16 @@
     </header>
     <main>
 <!--Секция HERO-->
-            <section class="hero conteiner section">
-            <h1>Эффективные решения<br> для вашего бизнеса</h1>
+            <section class="hero">
+            <div class="conteiner">
+            <h1>Эффективные решения для вашего бизнеса</h1>
             <button type="button" class="btn-studio">Заказать услугу</button>
+            </div>
             </section>
 <!--Секция "Наши достоинства"-->
-        <div class="dig-main">
-            <section class="dignity conteiner section">
-            <h2>Почему именно мы?</h2>
+            <section class="dignity section">
+            <div class="conteiner">
+            <h2 class="hide">Почему именно мы?</h2>
             <ul class="dignity-list">
                 <li class="dignity-item">
                     <h3 class="dignity-title">Внимание к деталям</h3>
@@ -63,50 +65,62 @@
                     </p>
                 </li>
             </ul>
+            </div>
         </section>
-    </div>
             
 <!--Секция "Чем мы занимаемся"-->
-            <section class="about-work conteiner section ">
+            <section class="about-work section ">
+                <div class="conteiner">
                 <h2 class="about-work-title">Чем мы занимаемся</h2>
                 <ul class="abou-w-list">
                     <li class="a-w-item"><img src="./images/img1(1).jpg" alt="Создание сайтов" width="370" height="294"></li>
                     <li class="a-w-item"><img src="./images/img2(1).jpg" alt="Создание мобильных приложений" width="370" height="294"></li>
                     <li class="a-w-item"><img src="./images/img3(1).jpg" alt="Дизайн" width="370" height="294"></li>
                 </ul>
+                </div>
             </section>
 <!--Секция "Наша команда"-->
-            <section class="team conteiner section">
+            <section class="team section">
+                <div class="conteiner">
                 <h2 class="about-work-title">Наша команда</h2>
                 <ul class="team-list">
                     <li class="team-item"><img src="./images/igor(1).jpg" alt="Игорь Демьяненко" width="270" height="260" class="team-img">
+                        <div class="our-team">
                         <h3 class="team-title">Игорь Демьяненко</h3>
                         <p lang="en" class="team-text">Product Designer</p>
+                        </div>
                     </li>
                     <li class="team-item"><img src="./images/olga(1).jpg" alt="Ольга Репина" width="270" height="260" class="team-img">
+                        <div class="our-team">
                         <h3 class="team-title">Ольга Репина</h3>
                         <p lang="en" class="team-text">Frontend Developer</p>
+                        </div>
                     </li>
                     <li class="team-item"><img src="./images/nikola(1).jpg" alt="Николай Тарасов" width="270" height="260" class="team-img">
+                        <div class="our-team">
                         <h3 class="team-title">Николай Тарасов</h3>
                         <p lang="en" class="team-text">Marketing</p>
+                        </div>
                     </li>
                     <li class="team-item"><img src="./images/mishel(1).jpg" alt="Михаил Ермаков" width="270" height="260" class="team-img">
+                        <div class="our-team">
                         <h3 class="team-title">Михаил Ермаков</h3>
                         <p lang="en" class="team-text">UI Designer</p>
+                        </div>
                     </li>
                 </ul>
+                </div>
             </section>
     </main>
 <!--Подвал сайта-->
-    <footer class="ftr conteiner">
-        <div class="ftr-cont">
+    <footer class="ftr">
+        <div class="conteiner">
             <a href="./index.html" lang="en" class="logo"><span>Web</span>Studio</a>
             <address>
                 <ul class="ftr-list">
                     <li><a href="https://goo.gl/maps/syK6WyoSJA7LZPz8A" target="_blank" rel="noopener noreferrer"
                             class="ftr-street">г. Киев, бульвар Леси Украинки, 26</a></li>
-                    <li><a class="ftr-contacts" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    <li><a class="ftr-contacts ftr-sc" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
                     <li><a class="ftr-contacts" href="tel:+380961111111">+38 096 111 11 11</a></li>
                 </ul>
             </address>
